@@ -1,0 +1,27 @@
+# gcc -g fisrtprog.c
+# gdb -q a.out
+#
+(gdb) list
+
+(gdb) disassemble main
+
+(gdb) break main
+
+
+(info) register eip
+
+   0x00000000004004c4 <+0>:	push   rbp
+   0x00000000004004c5 <+1>:	mov    rbp,rsp
+   0x00000000004004c8 <+4>:	sub    rsp,0x10
+   0x00000000004004cc <+8>:	mov    DWORD PTR [rbp-0x4],0x0
+   0x00000000004004d3 <+15>:	jmp    0x4004e3 <main+31>
+   0x00000000004004d5 <+17>:	mov    edi,0x4005e8
+   0x00000000004004da <+22>:	call   0x4003b8 <puts@plt>
+   0x00000000004004df <+27>:	add    DWORD PTR [rbp-0x4],0x1
+   0x00000000004004e3 <+31>:	cmp    DWORD PTR [rbp-0x4],0x9
+   0x00000000004004e7 <+35>:	jle    0x4004d5 <main+17>
+   0x00000000004004e9 <+37>:	mov    eax,0x0
+   0x00000000004004ee <+42>:	leave  
+   0x00000000004004ef <+43>:	ret    
+End of assembler dump.
+

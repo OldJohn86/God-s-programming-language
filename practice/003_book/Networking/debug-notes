@@ -1,0 +1,5 @@
+[1]
+#解决方法：安装libpcap-devel
+# yum install  libpcap-devel
+
+[2]
